@@ -33,7 +33,7 @@ layout: default
     {% endfor %}
   </div>
 
-  {% if paginator.total_pages > 1 %}
+  {% if paginator.multiple_pages %}
   <div class="pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
