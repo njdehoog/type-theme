@@ -20,11 +20,11 @@ layout: default
           </a>
         </h1>
         <p class="meta">
-          {{ post.date | date: "%B %-d, %Y" }}
+          {{ post.date | date_to_string }}
         </p>
       </header>
       <div class="excerpt">
-        {{ post.excerpt }}
+        <p>{{ post.excerpt }}</p>
         <a class="button" href="{{ post.url | prepend: site.baseurl }}">
           {{ site.theme.str_continue_reading }}
         </a>
