@@ -31,3 +31,13 @@ while (j < 20) {
     console.log(j);
 }
 ```
+
+Type Theme uses KaTeX to display maths. Equations such as {% katex inline:true %}S_n = a \times \frac{1-r^n}{1-r}{% endkatex %}
+ can be displayed inline.
+
+Alternatively, they can be shown on a new line:
+
+{% katex %}
+f(x) = \int \frac{2x^2+4x+6}{x-2}
+{% endkatex %}
+
